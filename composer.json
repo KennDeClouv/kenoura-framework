@@ -1,17 +1,21 @@
 {
-    "name": "kenoura/framework",
+    "name": "kenndeclouv/kenoura",
     "description": "The Kenoura PHP Framework by kenndeclouv.",
-    "keywords": ["framework", "kenoura"],
+    "keywords": [
+        "framework",
+        "kenoura",
+        "kenndeclouv"
+    ],
     "license": "MIT",
-    "homepage": "https://kenoura.com",
+    "homepage": "https://kenoura.kenndeclouv.my.id",
     "support": {
-        "issues": "https://github.com/kenoura/framework/issues",
-        "source": "https://github.com/kenoura/framework"
+        "issues": "https://github.com/KennDeClouv/kenoura-framework/issues",
+        "source": "https://github.com/KennDeClouv/kenoura-framework"
     },
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@kenoura.com"
+            "name": "kenndeclouv",
+            "email": "kenn@kenndeclouv.my.id"
         }
     ],
     "require": {
@@ -61,40 +65,40 @@
         "voku/portable-ascii": "^2.0.2"
     },
     "replace": {
-        "illuminate/auth": "self.version",
-        "illuminate/broadcasting": "self.version",
-        "illuminate/bus": "self.version",
-        "illuminate/cache": "self.version",
-        "illuminate/collections": "self.version",
-        "illuminate/concurrency": "self.version",
-        "illuminate/conditionable": "self.version",
-        "illuminate/config": "self.version",
-        "illuminate/console": "self.version",
-        "illuminate/container": "self.version",
-        "illuminate/contracts": "self.version",
-        "illuminate/cookie": "self.version",
-        "illuminate/database": "self.version",
-        "illuminate/encryption": "self.version",
-        "illuminate/events": "self.version",
-        "illuminate/filesystem": "self.version",
-        "illuminate/hashing": "self.version",
-        "illuminate/http": "self.version",
-        "illuminate/log": "self.version",
-        "illuminate/macroable": "self.version",
-        "illuminate/mail": "self.version",
-        "illuminate/notifications": "self.version",
-        "illuminate/pagination": "self.version",
-        "illuminate/pipeline": "self.version",
-        "illuminate/process": "self.version",
-        "illuminate/queue": "self.version",
-        "illuminate/redis": "self.version",
-        "illuminate/routing": "self.version",
-        "illuminate/session": "self.version",
-        "illuminate/support": "self.version",
-        "illuminate/testing": "self.version",
-        "illuminate/translation": "self.version",
-        "illuminate/validation": "self.version",
-        "illuminate/view": "self.version",
+        "Kenoura/auth": "self.version",
+        "Kenoura/broadcasting": "self.version",
+        "Kenoura/bus": "self.version",
+        "Kenoura/cache": "self.version",
+        "Kenoura/collections": "self.version",
+        "Kenoura/concurrency": "self.version",
+        "Kenoura/conditionable": "self.version",
+        "Kenoura/config": "self.version",
+        "Kenoura/console": "self.version",
+        "Kenoura/container": "self.version",
+        "Kenoura/contracts": "self.version",
+        "Kenoura/cookie": "self.version",
+        "Kenoura/database": "self.version",
+        "Kenoura/encryption": "self.version",
+        "Kenoura/events": "self.version",
+        "Kenoura/filesystem": "self.version",
+        "Kenoura/hashing": "self.version",
+        "Kenoura/http": "self.version",
+        "Kenoura/log": "self.version",
+        "Kenoura/macroable": "self.version",
+        "Kenoura/mail": "self.version",
+        "Kenoura/notifications": "self.version",
+        "Kenoura/pagination": "self.version",
+        "Kenoura/pipeline": "self.version",
+        "Kenoura/process": "self.version",
+        "Kenoura/queue": "self.version",
+        "Kenoura/redis": "self.version",
+        "Kenoura/routing": "self.version",
+        "Kenoura/session": "self.version",
+        "Kenoura/support": "self.version",
+        "Kenoura/testing": "self.version",
+        "Kenoura/translation": "self.version",
+        "Kenoura/validation": "self.version",
+        "Kenoura/view": "self.version",
         "spatie/once": "*"
     },
     "require-dev": {
@@ -133,21 +137,21 @@
     },
     "autoload": {
         "files": [
-            "src/Illuminate/Collections/functions.php",
-            "src/Illuminate/Collections/helpers.php",
-            "src/Illuminate/Events/functions.php",
-            "src/Illuminate/Filesystem/functions.php",
-            "src/Illuminate/Foundation/helpers.php",
-            "src/Illuminate/Log/functions.php",
-            "src/Illuminate/Support/functions.php",
-            "src/Illuminate/Support/helpers.php"
+            "src/Kenoura/Collections/functions.php",
+            "src/Kenoura/Collections/helpers.php",
+            "src/Kenoura/Events/functions.php",
+            "src/Kenoura/Filesystem/functions.php",
+            "src/Kenoura/Foundation/helpers.php",
+            "src/Kenoura/Log/functions.php",
+            "src/Kenoura/Support/functions.php",
+            "src/Kenoura/Support/helpers.php"
         ],
         "psr-4": {
-            "Illuminate\\": "src/Illuminate/",
-            "Illuminate\\Support\\": [
-                "src/Illuminate/Macroable/",
-                "src/Illuminate/Collections/",
-                "src/Illuminate/Conditionable/"
+            "Kenoura\\": "src/Kenoura/",
+            "Kenoura\\Support\\": [
+                "src/Kenoura/Macroable/",
+                "src/Kenoura/Collections/",
+                "src/Kenoura/Conditionable/"
             ]
         }
     },
@@ -156,7 +160,7 @@
             "tests/Database/stubs/MigrationCreatorFakeMigration.php"
         ],
         "psr-4": {
-            "Illuminate\\Tests\\": "tests/"
+            "Kenoura\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -168,7 +172,7 @@
         "ext-apcu": "Required to use the APC cache driver.",
         "ext-fileinfo": "Required to use the Filesystem class.",
         "ext-ftp": "Required to use the Flysystem FTP driver.",
-        "ext-gd": "Required to use Illuminate\\Http\\Testing\\FileFactory::image().",
+        "ext-gd": "Required to use Kenoura\\Http\\Testing\\FileFactory::image().",
         "ext-memcached": "Required to use the memcache cache driver.",
         "ext-pcntl": "Required to use all features of the queue worker and console signal trapping.",
         "ext-pdo": "Required to use all database features.",
