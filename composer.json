@@ -1,5 +1,5 @@
 {
-    "name": "kenndeclouv/kenoura",
+    "name": "kenoura/framework",
     "description": "The Kenoura PHP Framework by kenndeclouv.",
     "keywords": [
         "framework",
@@ -9,8 +9,8 @@
     "license": "MIT",
     "homepage": "https://kenoura.kenndeclouv.my.id",
     "support": {
-        "issues": "https://github.com/KennDeClouv/kenoura-framework/issues",
-        "source": "https://github.com/KennDeClouv/kenoura-framework"
+        "issues": "https://github.com/kenndeclouv/kenoura-framework/issues",
+        "source": "https://github.com/kenndeclouv/kenoura-framework"
     },
     "authors": [
         {
@@ -35,8 +35,8 @@
         "fruitcake/php-cors": "^1.3",
         "guzzlehttp/guzzle": "^7.8.2",
         "guzzlehttp/uri-template": "^1.0",
-        "kenoura/prompts": "^0.1.18|^0.2.0|^0.3.0",
-        "kenoura/serializable-closure": "^1.3|^2.0",
+        "laravel/prompts": "^0.1.18|^0.2.0|^0.3.0",
+        "laravel/serializable-closure": "^1.3|^2.0",
         "league/commonmark": "^2.6",
         "league/flysystem": "^3.25.1",
         "league/flysystem-local": "^3.25.1",
@@ -108,7 +108,7 @@
         "fakerphp/faker": "^1.24",
         "guzzlehttp/promises": "^2.0.3",
         "guzzlehttp/psr7": "^2.4",
-        "kenoura/pint": "^1.18",
+        "laravel/pint": "^1.18",
         "league/flysystem-aws-s3-v3": "^3.25.1",
         "league/flysystem-ftp": "^3.25.1",
         "league/flysystem-path-prefixing": "^3.25.1",
@@ -183,7 +183,7 @@
         "brianium/paratest": "Required to run tests in parallel (^7.0|^8.0).",
         "fakerphp/faker": "Required to use the eloquent factory builder (^1.9.1).",
         "filp/whoops": "Required for friendly error pages in development (^2.14.3).",
-        "kenoura/tinker": "Required to use the tinker console command (^2.0).",
+        "laravel/tinker": "Required to use the tinker console command (^2.0).",
         "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^3.25.1).",
         "league/flysystem-ftp": "Required to use the Flysystem FTP driver (^3.25.1).",
         "league/flysystem-path-prefixing": "Required to use the scoped driver (^3.25.1).",
