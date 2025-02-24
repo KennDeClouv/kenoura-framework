@@ -1,5 +1,6 @@
 {
     "name": "kenoura/framework",
+    "version": "1.0.0-beta",
     "description": "The Kenoura PHP Framework by kenndeclouv.",
     "keywords": [
         "framework",
