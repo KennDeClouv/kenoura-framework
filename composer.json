@@ -1,14 +1,13 @@
 {
     "name": "kenoura/framework",
-    "version": "1.0.0-beta",
-    "description": "The Kenoura PHP Framework by kenndeclouv.",
+    "description": "The Kenoura Framework.",
     "keywords": [
         "framework",
         "kenoura",
-        "kenndeclouv"
+        "kenoura framework"
     ],
     "license": "MIT",
-    "homepage": "https://kenoura.kenndeclouv.my.id",
+    "homepage": "https://kenoura.kennedeclouv.my.id",
     "support": {
         "issues": "https://github.com/kenndeclouv/kenoura-framework/issues",
         "source": "https://github.com/kenndeclouv/kenoura-framework"
@@ -66,40 +65,40 @@
         "voku/portable-ascii": "^2.0.2"
     },
     "replace": {
-        "kenoura/auth": "self.version",
-        "kenoura/broadcasting": "self.version",
-        "kenoura/bus": "self.version",
-        "kenoura/cache": "self.version",
-        "kenoura/collections": "self.version",
-        "kenoura/concurrency": "self.version",
-        "kenoura/conditionable": "self.version",
-        "kenoura/config": "self.version",
-        "kenoura/console": "self.version",
-        "kenoura/container": "self.version",
-        "kenoura/contracts": "self.version",
-        "kenoura/cookie": "self.version",
-        "kenoura/database": "self.version",
-        "kenoura/encryption": "self.version",
-        "kenoura/events": "self.version",
-        "kenoura/filesystem": "self.version",
-        "kenoura/hashing": "self.version",
-        "kenoura/http": "self.version",
-        "kenoura/log": "self.version",
-        "kenoura/macroable": "self.version",
-        "kenoura/mail": "self.version",
-        "kenoura/notifications": "self.version",
-        "kenoura/pagination": "self.version",
-        "kenoura/pipeline": "self.version",
-        "kenoura/process": "self.version",
-        "kenoura/queue": "self.version",
-        "kenoura/redis": "self.version",
-        "kenoura/routing": "self.version",
-        "kenoura/session": "self.version",
-        "kenoura/support": "self.version",
-        "kenoura/testing": "self.version",
-        "kenoura/translation": "self.version",
-        "kenoura/validation": "self.version",
-        "kenoura/view": "self.version",
+        "illuminate/auth": "self.version",
+        "illuminate/broadcasting": "self.version",
+        "illuminate/bus": "self.version",
+        "illuminate/cache": "self.version",
+        "illuminate/collections": "self.version",
+        "illuminate/concurrency": "self.version",
+        "illuminate/conditionable": "self.version",
+        "illuminate/config": "self.version",
+        "illuminate/console": "self.version",
+        "illuminate/container": "self.version",
+        "illuminate/contracts": "self.version",
+        "illuminate/cookie": "self.version",
+        "illuminate/database": "self.version",
+        "illuminate/encryption": "self.version",
+        "illuminate/events": "self.version",
+        "illuminate/filesystem": "self.version",
+        "illuminate/hashing": "self.version",
+        "illuminate/http": "self.version",
+        "illuminate/log": "self.version",
+        "illuminate/macroable": "self.version",
+        "illuminate/mail": "self.version",
+        "illuminate/notifications": "self.version",
+        "illuminate/pagination": "self.version",
+        "illuminate/pipeline": "self.version",
+        "illuminate/process": "self.version",
+        "illuminate/queue": "self.version",
+        "illuminate/redis": "self.version",
+        "illuminate/routing": "self.version",
+        "illuminate/session": "self.version",
+        "illuminate/support": "self.version",
+        "illuminate/testing": "self.version",
+        "illuminate/translation": "self.version",
+        "illuminate/validation": "self.version",
+        "illuminate/view": "self.version",
         "spatie/once": "*"
     },
     "require-dev": {
@@ -138,21 +137,21 @@
     },
     "autoload": {
         "files": [
-            "src/Kenoura/Collections/functions.php",
-            "src/Kenoura/Collections/helpers.php",
-            "src/Kenoura/Events/functions.php",
-            "src/Kenoura/Filesystem/functions.php",
-            "src/Kenoura/Foundation/helpers.php",
-            "src/Kenoura/Log/functions.php",
-            "src/Kenoura/Support/functions.php",
-            "src/Kenoura/Support/helpers.php"
+            "src/Illuminate/Collections/functions.php",
+            "src/Illuminate/Collections/helpers.php",
+            "src/Illuminate/Events/functions.php",
+            "src/Illuminate/Filesystem/functions.php",
+            "src/Illuminate/Foundation/helpers.php",
+            "src/Illuminate/Log/functions.php",
+            "src/Illuminate/Support/functions.php",
+            "src/Illuminate/Support/helpers.php"
         ],
         "psr-4": {
-            "Kenoura\\": "src/Kenoura/",
-            "Kenoura\\Support\\": [
-                "src/Kenoura/Macroable/",
-                "src/Kenoura/Collections/",
-                "src/Kenoura/Conditionable/"
+            "Illuminate\\": "src/Illuminate/",
+            "Illuminate\\Support\\": [
+                "src/Illuminate/Macroable/",
+                "src/Illuminate/Collections/",
+                "src/Illuminate/Conditionable/"
             ]
         }
     },
@@ -161,7 +160,7 @@
             "tests/Database/stubs/MigrationCreatorFakeMigration.php"
         ],
         "psr-4": {
-            "Kenoura\\Tests\\": "tests/"
+            "Illuminate\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -173,7 +172,7 @@
         "ext-apcu": "Required to use the APC cache driver.",
         "ext-fileinfo": "Required to use the Filesystem class.",
         "ext-ftp": "Required to use the Flysystem FTP driver.",
-        "ext-gd": "Required to use Kenoura\\Http\\Testing\\FileFactory::image().",
+        "ext-gd": "Required to use Illuminate\\Http\\Testing\\FileFactory::image().",
         "ext-memcached": "Required to use the memcache cache driver.",
         "ext-pcntl": "Required to use all features of the queue worker and console signal trapping.",
         "ext-pdo": "Required to use all database features.",
